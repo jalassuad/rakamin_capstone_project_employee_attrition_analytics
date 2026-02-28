@@ -56,24 +56,15 @@ The project successfully developed a high-precision predictive framework.
 
 ## 6. Recommendations
 
-* 
-**Operationalize Insights:** Shift from offline model development to real-world integration with enterprise HRIS systems.
-
-
+* **Operationalize Insights:** Shift from offline model development to real-world integration with enterprise HRIS systems.
 * **Targeted Interventions:**
 * Implement **team-level overtime dashboards** to monitor burnout.
 
-
 * Design **career acceleration programs** and assign mentors for early-career/single employees.
-
 
 * Conduct **quarterly pulse checks** to detect dissatisfaction early.
 
-
-
-
-* 
-**Policy Adjustments:** Review travel policies and offer hybrid/remote options for high-risk roles with high commute stress.
+* **Policy Adjustments:** Review travel policies and offer hybrid/remote options for high-risk roles with high commute stress.
 
 
 
