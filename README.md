@@ -7,8 +7,6 @@
 **Objectives:** * Develop a data-driven machine learning model to predict employee attrition risk and identify key influencing factors.
 
 * Reduce the overall attrition rate to the **10%** target level within the next year.
-
-
 * Deploy an **"Early Warning Dashboard"** to provide real-time risk scores and model interpretability for HR decision-making.
 
 
@@ -17,16 +15,9 @@
 
 The project focuses on:
 
-* 
-**Target Population:** 4,410 employee records including demographics, job details, and survey responses.
-
-
-* 
-**Analysis Segments:** Departmental, job role, and risk cohort breakdowns.
-
-
-* 
-**Model Goal:** Transitioning HR from reactive talent management to a proactive, predictive approach.
+* **Target Population:** 4,410 employee records including demographics, job details, and survey responses.
+* **Analysis Segments:** Departmental, job role, and risk cohort breakdowns.
+* **Model Goal:** Transitioning HR from reactive talent management to a proactive, predictive approach.
 
 
 
@@ -36,42 +27,20 @@ The project focuses on:
 
 **Assumptions:**
 
-* 
-**Success Rate:** A 50% success rate for targeted retention interventions is assumed for business impact calculations.
-
-
-* 
-**Financial Impact:** Replacement costs are estimated at 1.5x the employee's yearly salary, with a standard intervention cost of $2,000 per employee.
+* **Success Rate:** A 50% success rate for targeted retention interventions is assumed for business impact calculations.
+* **Financial Impact:** Replacement costs are estimated at 1.5x the employee's yearly salary, with a standard intervention cost of $2,000 per employee.
 
 
 
 ## 4. Data Analysis
 
-* 
-**Data Preparation:** Handled missing values via median imputation and addressed outliers in features like `MonthlyIncome` and `TotalWorkingYears`.
-
-
-* 
-**Feature Engineering:** Created 13 new features, including `AvgWorkingHours`, `PercentOvertime`, and `CommuteStressIndex` to better capture burnout and engagement signals.
-
-
+* **Data Preparation:** Handled missing values via median imputation and addressed outliers in features like `MonthlyIncome` and `TotalWorkingYears`.
+* **Feature Engineering:** Created 13 new features, including `AvgWorkingHours`, `PercentOvertime`, and `CommuteStressIndex` to better capture burnout and engagement signals.
 * **Key Drivers Identified:**
-* 
-**Workload:** High overtime intensity is a primary driver of burnout.
-
-
-* 
-**Demographics:** Younger and "Single" employees show higher attrition tendencies.
-
-
-* 
-**Satisfaction:** Low job and environment satisfaction strongly correlate with leaving.
-
-
-
-
-* 
-**Modeling:** Benchmarked multiple models (Logistic Regression, SVM, Random Forest, etc.). The **Random Forest** model was selected, achieving an accuracy of **99.6%** and a recall of **97.8%** after GridSearchCV and threshold tuning (optimal at 0.32).
+* **Workload:** High overtime intensity is a primary driver of burnout.
+* **Demographics:** Younger and "Single" employees show higher attrition tendencies.
+* **Satisfaction:** Low job and environment satisfaction strongly correlate with leaving.
+* **Modeling:** Benchmarked multiple models (Logistic Regression, SVM, Random Forest, etc.). The **Random Forest** model was selected, achieving an accuracy of **99.6%** and a recall of **97.8%** after GridSearchCV and threshold tuning (optimal at 0.32).
 
 
 
@@ -80,11 +49,7 @@ The project focuses on:
 The project successfully developed a high-precision predictive framework.
 
 * The model identified that **overtime intensity**, **marital status (Single)**, **age**, and **low job satisfaction** are the top predictors of attrition.
-
-
 * By focusing on "High Risk" segments (probability > 0.60), the company can potentially prevent significant turnover-related losses.
-
-
 * The deployment of the Streamlit dashboard enables HR to perform real-time risk assessment and decision-making.
 
 
@@ -136,8 +101,6 @@ pip install -r requirements.txt
 streamlit run app.py
 
 ```
-
-
 2. Access the dashboard via the provided local URL (typically `http://localhost:8501`).
 3. Upload employee data or use the sidebar to predict individual attrition risk scores.
 
